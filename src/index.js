@@ -7,7 +7,7 @@ import { BrowserRouter } from "react-router-dom";
 import { QueryClientProvider } from "react-query";
 import { queryClient } from "./hooks/Routes";
 
-const root = ReactDOM.render(
+ReactDOM.render(
   <QueryClientProvider client={queryClient}>
     <BrowserRouter>
       <App />
