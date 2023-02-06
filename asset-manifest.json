@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/chalo-demo/static/css/main.fd36b337.css",
+    "main.js": "/chalo-demo/static/js/main.e434bb8a.js",
+    "static/js/498.f43e6028.chunk.js": "/chalo-demo/static/js/498.f43e6028.chunk.js",
+    "static/js/703.09f6311d.chunk.js": "/chalo-demo/static/js/703.09f6311d.chunk.js",
+    "static/js/598.0138a5bf.chunk.js": "/chalo-demo/static/js/598.0138a5bf.chunk.js",
+    "static/js/787.e89b2238.chunk.js": "/chalo-demo/static/js/787.e89b2238.chunk.js",
+    "static/media/Neusoft_Logo.svg": "/chalo-demo/static/media/Neusoft_Logo.f75fa7fa6d80b3463f892901c4d766c3.svg",
+    "index.html": "/chalo-demo/index.html",
+    "main.fd36b337.css.map": "/chalo-demo/static/css/main.fd36b337.css.map",
+    "main.e434bb8a.js.map": "/chalo-demo/static/js/main.e434bb8a.js.map",
+    "498.f43e6028.chunk.js.map": "/chalo-demo/static/js/498.f43e6028.chunk.js.map",
+    "703.09f6311d.chunk.js.map": "/chalo-demo/static/js/703.09f6311d.chunk.js.map",
+    "598.0138a5bf.chunk.js.map": "/chalo-demo/static/js/598.0138a5bf.chunk.js.map",
+    "787.e89b2238.chunk.js.map": "/chalo-demo/static/js/787.e89b2238.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fd36b337.css",
+    "static/js/main.e434bb8a.js"
+  ]
+}
