@@ -1,6 +1,5 @@
 {
   "name": "chalo-demo",
-  "homepage": "https://manishubnare.github.io/chalo-demo",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
