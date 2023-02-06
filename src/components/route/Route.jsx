@@ -91,6 +91,7 @@ function AddRoute(props) {
           JSON.stringify(allRoutesData)
         );
         window.localStorage.removeItem("stops_data");
+        updateData("fetchStopsData", []);
         updateData("fetchRouteData", allRoutesData);
         form.resetFields();
         messageApi.open({
