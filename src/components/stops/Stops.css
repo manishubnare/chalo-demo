@@ -1,0 +1,11 @@
+.stop-btn{
+    display: flex;
+    justify-content: center;
+    margin-right: 30px;
+}
+
+.stop-form{
+    display: flex;
+    margin-top: 15px;
+    justify-content: center;
+}

@@ -1,0 +1,25 @@
+.form-content{
+    margin-top: 10px;
+}
+
+.form-fields{
+    justify-content: center;
+    margin: 20px 30%;
+}
+
+.add-more-stop-btn{
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 15px;
+}
+
+.add-route-btn{
+    display: flex;
+    justify-content: center;
+    top: 60px;
+    position: relative;
+}
+
+.select-field-pos{
+    text-align: left;
+}
