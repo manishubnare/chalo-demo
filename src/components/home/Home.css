@@ -6,3 +6,7 @@
 .add-new-route{
     margin: 10px;
 }
+
+.table-height{
+    min-height: 300px;
+}

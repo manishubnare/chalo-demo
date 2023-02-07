@@ -24,12 +24,15 @@ function Home() {
   const [enableEditRouteData, setEnableEditRouteData] = useState(false);
 
   const getSearchRouteOptions = () => {
-    const routesName = map(routestableData, (routeDetails) => {
+    const routesName = compact(map(routestableData, (routeDetails) => {
+      if(get(routeDetails, 'routeStatus') === "INACTIVE"){
+        return null;
+      }
       return {
         label: get(routeDetails, "routeName"),
-        value: get(routeDetails, "routeName"),
+        value: get(routeDetails, "routeName")
       };
-    });
+    }));
     return routesName;
   };
 
@@ -259,7 +262,7 @@ function Home() {
   return (
     <div>
       <Header />
-      <div>
+      <div className="table-height">
         <Table
           loading={isLoading}
           columns={routeTableColumn}
@@ -283,7 +286,7 @@ function Home() {
             onChange={handleSelectChange}
           />
         </Col>
-        <Col offset={4}>
+        <Col offset={5}>
           <Button onClick={() => generatePdf(routestableData)}>
             Generate Report
           </Button>
