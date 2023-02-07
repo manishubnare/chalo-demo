@@ -10,3 +10,7 @@
 .table-height{
     min-height: 300px;
 }
+
+.select-field{
+    width: 150px;
+}

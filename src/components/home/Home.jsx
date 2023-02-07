@@ -145,6 +145,7 @@ function Home() {
         ) {
           return (
             <Select
+              className="select-field"
               defaultValue={columnValue}
               options={ROUTE_DIRECTION}
               onSelect={(_, option) => handleSelectFieldChange(option)}
@@ -172,6 +173,7 @@ function Home() {
         ) {
           return (
             <Select
+              className="select-field"
               defaultValue={columnValue}
               options={ROUTE_STATUS}
               onSelect={(_, option) => handleSelectFieldChange(option)}
