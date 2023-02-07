@@ -14,6 +14,36 @@ import generatePdf from "../../services/GeneratePdf";
 const CustomEditOutlined = HidableComponent(EditOutlined);
 const CustomCheckOutlined = HidableComponent(CheckOutlined);
 
+const ROUTE_DIRECTION = [
+  {
+    key: 1,
+    name: 'routeDirection',
+    label: "UP",
+    value: "UP",
+  },
+  {
+    key: 2,
+    name: 'routeDirection',
+    label: "DOWN",
+    value: "DOWN",
+  },
+];
+
+const ROUTE_STATUS = [
+  {
+    key: 1,
+    name: 'routeStatus',
+    label: "ACTIVE",
+    value: "ACTIVE",
+  },
+  {
+    key: 2,
+    name: 'routeStatus',
+    label: "INACTIVE",
+    value: "INACTIVE",
+  },
+];
+
 function Home() {
   const [openStopModal, setOpenStopsModal] = useState(false);
   const [selectedStopsData, setStopsData] = useState([]);
@@ -43,6 +73,15 @@ function Home() {
       [name]: value,
     });
   };
+
+  const handleSelectFieldChange = (option) => {
+    const name = get(option, 'name');
+    const value = get(option, 'value');
+    setEditableRouteData({
+      ...editableRouteData,
+      [name]: value
+    });
+  }
 
   const routeTableColumn = [
     {
@@ -105,11 +144,10 @@ function Home() {
           selectedRowRouteId === get(data, "routeId")
         ) {
           return (
-            <Input
-              type="text"
+            <Select
               defaultValue={columnValue}
-              name="routeDirection"
-              onChange={(e) => handleFieldValueChange(e)}
+              options={ROUTE_DIRECTION}
+              onSelect={(_, option) => handleSelectFieldChange(option)}
             />
           );
         } else {
@@ -133,11 +171,10 @@ function Home() {
           selectedRowRouteId === get(data, "routeId")
         ) {
           return (
-            <Input
-              type="text"
+            <Select
               defaultValue={columnValue}
-              name="routeStatus"
-              onChange={(e) => handleFieldValueChange(e)}
+              options={ROUTE_STATUS}
+              onSelect={(_, option) => handleSelectFieldChange(option)}
             />
           );
         } else {
